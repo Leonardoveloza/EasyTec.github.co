@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;color: goldenrod;text-align: center;}
+h2{ font-size: 2.5em;}
+h3{font-size: 2.5em;}
+h4{font-size: 2.5em;}
+h5{font-size: 2.5em;}
+h6{font-size: 2.5em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+li{font-size: 3em;}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 20px greenyellow;
+    color: white;
+    background-color: blueviolet;
+}
+button:hover{
+    background-color: rgb(81, 34, 126);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: goldenrod;}
+header{
+    background-color: rgb(240, 240, 240);
+}
+
+header  .logo{
+    margin: 0;
+    padding: 25px 40px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    font-size: 2em;
+    text-align: center;
+}
+header  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header  .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; 
+    align-content: center;
+    
+}
+header a{
+    padding:  10px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+    
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(fondohero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#hero h1{
+    color: goldenrod;
+}
+#hero button{
+    font-size: 2em;
+}
+
+#somosEasyTec .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Quehacemos{
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+
+#Quehacemos .container{
+    text-align: center;
+    padding: 100px 0;
+}
+.titulo2{
+    color: goldenrod;
+    text-align: center;
+}
+#Quehacemos p{
+    display: none;
+}
+#Quehacemos .carta{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px;
+    border-radius: 20px;
+}
+#Quehacemos .programas{
+    gap: 20px;
+    width: calc(31%-10px)
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(mantenimiento.jpg);
+    
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+) 
+,url(partes.jpg);
+    
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(completos.jpg);
+    
+    
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 180px 12px; 
+    
+}
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(30, 30, 30);
+    color: beige;
+    height: 120vh;
+}
+#final h2{
+    font-size: 9vw;
+}
+#final button{
+    font-size: 2em;
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(197, 194, 194);
+}
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    
+}
+footer .container{
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#imagen2{
+    width: 200px; 
+}
+
+@media (min-width: 400px){
+    header  .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header  .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+
+        gap: 120px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+    #somosEasyTec .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somosEasyTec .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+    #somosEasyTec .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagen.jpg);
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    #Quehacemos .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #Quehacemos p{
+        display: block;
+        margin-bottom: 30px;
+        bottom: 20px;
+    }
+    #Quehacemos .carta{
+        
+        background-size: 100% 680px;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50);
+    
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(mantenimiento.jpg);
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(partes.jpg);
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(completos.jpg);
+    }
+  
+    #caracteristicas .container{
+        text-align: initial;
+        align-items: center;
+        
+    }
+    
+    #caracteristicas ul{
+        margin-left: 150px;
+        
+    }
+    #caracteristiscas li{
+        align-items: center;
+    } 
+    #final h2{
+        font-size: 5em;
+    }
+    #final button{
+        font-size: 2em;
+    }
+    footer .container{
+        justify-content: flex-end;
+    }
+}
